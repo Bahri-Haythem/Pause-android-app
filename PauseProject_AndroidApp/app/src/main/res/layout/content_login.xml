@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <TextView
+            android:id="@+id/textViewPause"
+            android:layout_width="271dp"
+            android:layout_height="102dp"
+            android:fontFamily="@font/fira_mono_bold"
+            android:gravity="center"
+            android:text="@string/pause"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/purple_200"
+            android:textSize="36sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.081" />
+
+        <ImageView
+            android:id="@+id/imageViewPause"
+            android:layout_width="47dp"
+            android:layout_height="47dp"
+            android:contentDescription="TODO"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewPause"
+            app:layout_constraintEnd_toEndOf="@+id/textViewPause"
+            app:layout_constraintHorizontal_bias="0.147"
+            app:layout_constraintStart_toStartOf="@+id/textViewPause"
+            app:layout_constraintTop_toTopOf="@+id/textViewPause"
+            app:layout_constraintVertical_bias="0.472"
+            app:srcCompat="@android:drawable/ic_media_pause"
+            app:tint="@color/pureRed" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:hint="Email goes here"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.374"
+            style="@style/textView_style" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="337dp"
+            android:layout_height="47dp"
+            android:ems="10"
+            android:fontFamily="@font/fira_mono"
+            android:hint="@string/your_password"
+            android:inputType="textPassword"
+            android:textColor="@color/purple_200"
+            android:textColorHighlight="@color/teal_200"
+            android:textColorHint="@color/placeHolderGrey"
+            android:textColorLink="@color/teal_200"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.485" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/buttons_style"
+            android:layout_width="155dp"
+            android:layout_height="50dp"
+            android:text="@string/action_log_in"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.671" />
+
+        <TextView
+            android:id="@+id/textViewNotRegistred"
+            style="@style/TextViewPurple"
+            android:layout_width="125dp"
+            android:layout_height="20dp"
+            android:text="@string/not_registred_yet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.944"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.867" />
+
+        <TextView
+            android:id="@+id/textViewClickhereLogin"
+            style="@style/TextViewClickhere"
+            android:layout_width="105dp"
+            android:layout_height="28dp"
+            android:text="@string/click_here"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.924"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewNotRegistred"
+            app:layout_constraintVertical_bias="0.181" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <ImageView
+                    android:id="@+id/background_img"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/purple_500"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/ic_launcher_background" />
+
+                <ImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="102dp"
+                    android:layout_height="85dp"
+                    android:src="@mipmap/ic_launcher"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.294" />
+
+                <TextView
+                    android:id="@+id/text_displayname_main"
+                    style="@style/TextViewPurple"
+                    android:layout_width="281dp"
+                    android:layout_height="51dp"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginTop="135dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.48"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/background_img"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/background_img"
+                    app:layout_constraintEnd_toEndOf="@+id/background_img"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="@+id/background_img"
+                    app:layout_constraintTop_toTopOf="@+id/background_img"
+                    app:layout_constraintVertical_bias="0.856" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/TextViewGreyNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Email" />
+
+            <TextView
+                android:id="@+id/text_email"
+                style="@style/TextViewPurpleProfile" />
+
+            <View
+                android:id="@+id/divider"
+                style="@style/line"
+                android:layout_margin="20dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/TextViewGreyNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Created at " />
+
+            <TextView
+                android:id="@+id/text_createdat"
+                style="@style/TextViewPurpleProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/divider2"
+                style="@style/line"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@color/placeHolderGrey" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/TextViewGreyNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Last login" />
+
+            <TextView
+                android:id="@+id/text_lastlogin"
+                style="@style/TextViewPurpleProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/divider3"
+                style="@style/line"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@color/placeHolderGrey" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/TextViewGreyNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Display name" />
+
+            <TextView
+                android:id="@+id/text_displayname"
+                style="@style/TextViewPurpleProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/divider4"
+                style="@style/line"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@color/placeHolderGrey" />
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/TextViewGreyNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Number of likes" />
+
+            <TextView
+                android:id="@+id/text_totalLikes"
+                style="@style/TextViewPurpleProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/divider5"
+                style="@style/line"
+                android:layout_height="1dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:background="@color/placeHolderGrey" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/TextViewGreyNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description" />
+
+            <TextView
+                android:id="@+id/text_description"
+                style="@style/TextViewPurpleProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

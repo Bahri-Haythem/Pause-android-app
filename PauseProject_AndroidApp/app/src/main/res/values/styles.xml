@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="buttons_style">
+        <item name="android:layout_width">146dp</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:backgroundTint">@color/pureRed</item>
+        <item name="android:fontFamily">@font/fira_mono_bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="textView_style">
+        <item name="android:layout_width">336dp</item>
+        <item name="android:layout_height">49dp</item>
+        <item name="android:ems">10</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="android:textColorHighlight">@color/teal_200</item>
+        <item name="android:textColorHint">@color/placeHolderGrey</item>
+        <item name="android:textColorLink">@color/teal_200</item>
+        <item name="android:fontFamily">@font/fira_mono</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewPurple">
+        <item name="android:layout_width">141dp</item>
+        <item name="android:layout_height">27dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="android:fontFamily">@font/fira_mono_bold</item>
+    </style>
+
+    <style name="TextViewPurpleSmall">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="android:fontFamily">@font/fira_mono_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextViewGreySmall">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/placeHolderGrey</item>
+        <item name="android:fontFamily">@font/fira_mono_bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextViewGreyNormal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/placeHolderGrey</item>
+        <item name="android:fontFamily">@font/fira_mono</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextViewClickhere">
+        <item name="android:layout_width">78dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/teal_200</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewPurpleProfile" parent="TextViewGreySmall">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">393dp</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@color/placeHolderGrey</item>
+    </style>
+
+    <style name="btnPurple">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@color/purple_200</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
