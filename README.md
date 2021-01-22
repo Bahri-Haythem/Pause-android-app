@@ -17,4 +17,4 @@ Pause is an android app with .net core backend for browsing games. It implements
 
 ## Recommended games
 
-<img src="images/7.png" width="300"> | <img src="images/8.png" width="300">
+<img src="images/7.png" width="300">  <img src="images/8.png" width="300">
